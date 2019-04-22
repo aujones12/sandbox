@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../shitbox/snadboxjs.js">
+   
+     <title>Band Mixer</title>
+
+</head>
+<body>
+
+    <script>
+        $(document).ready(function(){
+            console.log("what the hell");
+            $("#page-headder").fadeIn("slow");
+            $("#continer-top").fadeIn("slow");
+            $("#continer-bottom").fadeIn("slow");
+            $("#footer").fadeIn("slow");
+        });
+    </script>
+
+    <div id="page-headder" class="jumbotron">
+        <h1 class="display-4 text-center">Welcome to Band Mixer</h1>
+    </div>
+    
+    <div id="continer-top"class="container">
+        <form>
+            <div class="form-group text-center">
+            <label for="inputField">Input any band!</label>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="user-input" placeholder="DO IT!">
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+        </form> 
+    </div>
+    <div id="continer-bottom"class="container">
+        <div class="card">
+            <div class="card-header" id="user-input-card-header-text">
+                User Input
+            </div>
+            <div class="card-body" id="">
+
+                <h5 class="card-title">This is the most popular search on youtube for "use input"!</h5>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <iframe frameborder="0" scrolling="no" height="500px" width="100%"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    <!-- Add user input to specify video link, or use youtube API params-->
+                    </iframe>   
+                </div>
+                <br>
+
+                <p class="card-text">User input bio from wikipedia</p>
+
+                <a href="#" class="btn btn-primary">Find out more!</a>
+                <!-- link to their wiki page? -->
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer"class="page-footer font-small bg-light">
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Team Mean Green</a>
+        </div> 
+    </footer>
+</body>
+</html>
